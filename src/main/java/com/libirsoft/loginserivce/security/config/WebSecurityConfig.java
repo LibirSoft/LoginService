@@ -11,6 +11,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @AllArgsConstructor
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
@@ -23,4 +25,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authenticated().and()
                 .formLogin();
     }
+
+
+    //TODO
 }
